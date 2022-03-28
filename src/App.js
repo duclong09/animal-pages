@@ -1,13 +1,14 @@
 
-import './index.css';
-import User from './Components/User/user';
+
+import AnimalFeature from './Components/Pages/List';
 
 
 function App() {
   
   return (
     <div className="App">
-        <User/>
+        {/* <User/> */}
+        <AnimalFeature />
     </div>
   );
 }

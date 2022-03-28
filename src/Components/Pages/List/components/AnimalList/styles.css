@@ -1,0 +1,10 @@
+.animal-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -20px;
+}
+.animal-list > li{
+    padding: 0 20px;
+}
