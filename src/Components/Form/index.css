@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right ,#B066FE,#63E2FF )
+}
+
+
+
 input, button{
     border: none;
     outline: none;
@@ -44,11 +62,12 @@ form .form-login .login-title{
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .form-login .form-group label{
     display: block;
-    color: #666;
+    color: #000;
     font-size: 20px;
     margin-bottom: 5px;
     transition: 0.4s;
