@@ -1,0 +1,11 @@
+.logout-user button{
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 12px 20px;
+    margin: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: aqua;
+    color: #fff;
+}

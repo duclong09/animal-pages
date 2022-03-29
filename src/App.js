@@ -1,15 +1,10 @@
 
-
-import AnimalFeature from './Components/Pages/List';
-
-
+import User from './Components/User/user';
 function App() {
-  
   return (
-    <div className="App">
-        {/* <User/> */}
-        <AnimalFeature />
-    </div>
+      <div className="user-login">
+        <User/>
+      </div>
   );
 }
 

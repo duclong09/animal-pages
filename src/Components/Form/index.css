@@ -1,106 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-
-
-/* .App{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right ,#B066FE,#63E2FF )
-} */
-
-
-
-input, button{
-    border: none;
-    outline: none;
+.user-login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-form{
-    display: block;
-    position: relative;
-    background-image: url(https://media.istockphoto.com/photos/happy-cat-lovely-comfortable-sleeping-by-the-woman-stroking-hand-grip-picture-id1149249445?b=1&k=20&m=1149249445&s=170667a&w=0&h=ktuqheBTHOEWBGd7bSLpj3eCSZVJ4Zeg-pZJyeH-A1E=);
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    border-radius: 10px;
+input,
+button {
+  border: none;
+  outline: none;
 }
 
-form::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background-image: linear-gradient(to bottom right ,#B066FE,#63E2FF )
+form {
+  display: block;
+  position: relative;
+  background-image: url(https://media.istockphoto.com/photos/happy-cat-lovely-comfortable-sleeping-by-the-woman-stroking-hand-grip-picture-id1149249445?b=1&k=20&m=1149249445&s=170667a&w=0&h=ktuqheBTHOEWBGd7bSLpj3eCSZVJ4Zeg-pZJyeH-A1E=);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 10px;
 }
 
-form .form-login{
-    position: relative;
-    display: block;
-   
-    padding: 30px;
-    z-index: 2;
-   
-    
+form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-image: linear-gradient(to bottom right, #b066fe, #63e2ff);
 }
 
-form .form-login .login-title{
-    color: aqua;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+form .form-login {
+  position: relative;
+  display: block;
+
+  padding: 30px;
+  z-index: 2;
 }
 
-.form-login .form-group label{
-    display: block;
-    color: #000;
-    font-size: 20px;
-    margin-bottom: 5px;
-    transition: 0.4s;
+form .form-login .login-title {
+  color: aqua;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
-.form-login .form-group:focus-within label{
-    color: #FE4880;
+.form-login .form-group label {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 5px;
+  transition: 0.4s;
 }
 
-form .form-login .form-group input{
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    transition: 0.4s;
+.form-login .form-group:focus-within label {
+  color: #fe4880;
 }
 
-form .form-login .form-group input:focus{
-    box-shadow: 0px 0px 3px rgba(0,0,0, 0.2);
+form .form-login .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  transition: 0.4s;
 }
 
-form .form-login input[type="submit"]{
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: #FE4880;
-    transition: 0.4s;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
+form .form-login .form-group input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
+form .form-login input[type="submit"] {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #fe4880;
+  transition: 0.4s;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
