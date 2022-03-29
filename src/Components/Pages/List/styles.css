@@ -1,5 +1,16 @@
 
 h2{
     text-align: center;
-    color:aqua;
+    color: #000;
+}
+
+@media (max-width: 1093px) {
+    .animal-rener{
+        margin-top:200px;
+    }
+}
+@media (max-width: 800px) {
+    .animal-rener{
+        margin-top: 800px;
+    }
 }

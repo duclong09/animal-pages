@@ -1,3 +1,5 @@
+
+
 .logout-user button{
     top: 0;
     right: 0;
@@ -7,5 +9,9 @@
     text-transform: uppercase;
     cursor: pointer;
     background-color: aqua;
-    color: #fff;
+    color: #000;
+    position: fixed;
+}
+span{
+    color: red;
 }

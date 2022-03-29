@@ -1,10 +1,31 @@
 
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Pagination from '../../Pagination'
 import AnimalList from './components/AnimalList'
 import './styles.css'
 
 function AnimalFeature(props) {
+    
+
+   const [pagination, setPagination] = useState({
+       _page: 1,
+       _limit: 5,
+       _totalRows: 6,
+   })
+
+   const [filters, setFilter] = useState({
+        _limit:5,
+        _page: 1
+   })
+
+   useEffect(()=>{
+    //    const requesJson = animalList
+    //    const response = requesJson
+    //    const responJson = response.json()
+    //    console.log({responJson})
+        setPagination(pagination)
+   },[filters])
    const animalList = [
        {
            id: 1,
@@ -80,12 +101,26 @@ function AnimalFeature(props) {
        }
    ]
 
+
+   function handlePageChange(newPage){
+       console.log('New page: ', newPage)
+        setFilter({
+            ...filters,
+            _page: newPage,
+        })
+   }
+
    return(
        
        <div className='animal-rener'>
            
            <h2>Animal images & Picture</h2>
+           
            <AnimalList animalList={animalList}/>
+           <Pagination 
+                pagination={pagination}
+                onPageChange={handlePageChange} 
+           />
        </div>
    )
 }
