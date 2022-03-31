@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FormLogin from "../Form/Form-Login";
 import "../Form/index.css";
-import AnimalFeature from "../Pages/List";
+import RenderAnimalList from "../Render-Animal-List";
 import "./styles.css";
 function User() {
   const userLogin = {
@@ -40,11 +40,12 @@ function User() {
     <div className="User">
       {user.email !== "" ? (
         <div className="welcome">
-          <h2>
+          <h2 className="user-author">
             Welcome, <span>{user.name}</span>
           </h2>
 
-          <AnimalFeature />
+          {/* <AnimalFeature /> */}
+          <RenderAnimalList/>
 
           <div className="logout-user">
             <button onClick={LogOut}>Logout</button>

@@ -1,0 +1,51 @@
+.container{
+    margin-bottom: 500px;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.animal-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0 40px;
+    margin-top: 200rem;
+}
+
+.animal-media{
+    margin-bottom: 40px;
+}
+.animal-item{
+    list-style-type: none;
+
+}
+
+.animal-title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid orange;
+    cursor: pointer;
+}
+.animal-desc{
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+} 
+
+.animal-images{
+    width: 100%;
+    height: 310px;
+    border-radius: 12px;
+    object-fit: cover;
+   cursor: pointer;
+}
